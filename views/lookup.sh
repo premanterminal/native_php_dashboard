@@ -1,0 +1,1 @@
+awk -F"|" 'NR==FNR {a[$1]=$1;next}{if(a[$1]) print a[$1]}' /common/data/data/Binjai/12_bulk_Binjai_4.txt /common/data/data/mkiosbulk_201804.txt > /common/data/hasil/bulk/Binjai/hasil_12_bulk_Binjai_4.txt
